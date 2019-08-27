@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box;
+  word-break: break-all;
+  overflow-wrap: break-word;
+}
+img {
+  display: inline-block;
+  vertical-align: top;
+  width: 25%;
+  position: relative;
+}
