@@ -18,6 +18,9 @@
 .image-number::before {
   content: "#";
 }
+span {
+  color: #CDCDCD;
+}
 
 img {
   width: 100%;
@@ -26,6 +29,7 @@ img {
 
 .authors {
   border: hidden;
+  display: inline-block;
 }
 
 .authors img {
@@ -33,9 +37,14 @@ img {
   border: none;
   margin: 1px;
   padding-top: 5px;
+  vertical-align: middle;
 }
 .authors a {
   display: inline;
+  color: #1A1A18;
+}
+a:-webkit-any-link{
+  color: black;
 }
 .octocat {
   display: inline-block;
@@ -43,7 +52,24 @@ img {
   margin: 6px;
   padding-right: 1%;
   border-bottom: 1px solid #CACACA;
+  border-radius: 4px;
+  position: relative;
 
+}
+
+.octocat > a::after {
+  content: "";
+  height: 0;
+  width: 0;
+
+  border-top: solid 10px #CACACA;
+
+  border-left: solid 10px transparent;
+  border-right: solid 10px transparent;
+
+  position: absolute;
+  top: 90%;
+  right: 5%;
 }
 ul {
   padding: 1px;
@@ -55,4 +81,5 @@ text-decoration: none;
 
 .image-caption {
   float: right;
+
 }
