@@ -3,9 +3,22 @@
   word-break: break-all;
   overflow-wrap: break-word;
 }
-img {
-  display: inline-block;
-  vertical-align: top;
-  width: 25%;
-  position: relative;
+.authors {
+  height: 20%;
+  width: auto;
+}
+.octodex {
+  display: flex;
+
+}
+.octocat {
+  flex: 33.33%;
+  padding: 5px;
+  height: 100px;
+  width: auto;
+}
+ul {
+  list-style-type: none;
+  height: 20%;
+  width: auto;
 }
